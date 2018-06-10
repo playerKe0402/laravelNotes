@@ -47,3 +47,6 @@ composer create-project laravel/laravel MyProject --prefer-dist
 chmod -R 777 /var/www/html/MyProject/
 ```
 
+## 常見問題 
+Routes 除了/之外其他 Page 顯示 Not Found
+
