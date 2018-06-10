@@ -78,3 +78,4 @@ meta 標籤
 <meta name="csrf-token" content="{{ csrf_token() }}"/>
 ```
 ## Reference
+[網址移除P](http://blog.tonycube.com/2015/01/laravel-23-public.html)
