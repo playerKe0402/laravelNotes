@@ -73,3 +73,7 @@ Blade 模板語法
 ```
 {{ csrf_field() }}
 ```
+meta 標籤
+```
+<meta name="csrf-token" content="{{ csrf_token() }}"/>
+```
