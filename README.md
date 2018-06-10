@@ -64,10 +64,12 @@ chmod -R 777 /var/www/html/MyProject/
 Laravel 提供簡單防護方法防止跨網站請求偽造（CSRF）攻擊
 
 Laravel 會自動產生一個 CSRF token，在網頁裡 form 應該包含一個隱藏的 CSRF token 欄位進行 CSRF 請求驗證
-```
-// 一般 PHP
-<?php echo csrf_field(); ?>
 
-// Blade 模板語法
+一般 PHP
+```
+<?php echo csrf_field(); ?>
+```
+Blade 模板語法
+```
 {{ csrf_field() }}
 ```
