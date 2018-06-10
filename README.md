@@ -49,6 +49,7 @@ chmod -R 777 /var/www/html/MyProject/
 
 ## 常見問題 
 - Routes 除了/之外其他 Page 顯示 Not Found
+
 將 /etc/init.d/apache2/apache2.conf 文件中的 AllowOverride None 改為 AllowOverride Al
 ```
 <Directory /var/www/>
