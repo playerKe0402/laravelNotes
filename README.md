@@ -77,6 +77,13 @@ meta 標籤
 ```
 <meta name="csrf-token" content="{{ csrf_token() }}"/>
 ```
+- Git 更新
+```
+sudo apt-get remove git
+sudo add-apt-repository ppa:git-core/ppa
+sudo apt-get update
+sudo apt-get install git
+```
 ## Reference
 [網址移除Public](http://blog.tonycube.com/2015/01/laravel-23-public.html)
 
