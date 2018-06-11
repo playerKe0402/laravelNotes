@@ -26,12 +26,13 @@ apt-get update
 ```
 Step 3. 安裝PHP擴展元件
 ```
-apt-get install php7.1 php7.1-xml php7.1-mbstring php7.1-mysql php7.1-json php7.1-curl php7.1-cli php7.1-common php7.1-mcrypt php7.1-gd libapache2-mod-php7.1 php7.1-zip
+apt-get install -y php7.1 php7.1-xml php7.1-mbstring php7.1-mysql php7.1-json php7.1-curl php-pear php7.1-dev php7.1-cli php7.1-common php7.1-mcrypt php7.1-gd libapache2-mod-php7.1 php7.1-zip php7.1-gmp \
 ```
 
 ## 安裝 Composer
 使用curl 指令下載 composer.phar 並移至 /usr/local/bin/ 目錄下(改名為composer)
 ```
+apt-get install curl
 curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
 chmod +x /usr/local/bin/composer
@@ -52,6 +53,10 @@ chmod -R 777 /var/www/html/MyProject/
 sudo pecl install mongodb
 ```
 
+## Laravel & MongoDB Connect 設定
+Step 1. 在 etc/php/7.1/apache2/php.ini 設定檔中加入 extension=mongodb.so
+
+Step 2. 
 
 ## 常見問題 
 - Routes 除了/之外其他 Page 顯示 Not Found
