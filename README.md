@@ -54,9 +54,34 @@ sudo pecl install mongodb
 ```
 
 ## Laravel & MongoDB Connect 設定
-Step 1. 在 etc/php/7.1/apache2/php.ini 設定檔中加入 extension=mongodb.so
+Step 1. 在 /etc/php/7.1/apache2/php.ini 設定檔中加入 extension=mongodb.so
 
-Step 2. 
+Step 2. 在 /var/www/html/MyProject/.env 新增 MongoDB 設定
+```
+MONGODB_CONNECTION=mongodb
+MONGODB_HOST=127.0.0.1
+MONGODB_PORT=27017
+MONGODB_DATABASE=
+MONGODB_USERNAME=
+MONGODB_PASSWORD=
+```
+Step 3. 在 /var/www/html/MyProject/config/database.php 新增 MongoDB 設定
+將 'default' => env('DB_CONNECTION', 'mysql'), 改為 'default' => env('MONGODB_CONNECTION', 'mongodb'),
+並新增 MongoDB 相關設定
+```
+'mongodb' => [
+	'driver' => 'mongodb',
+	'host' => '127.0.0.1',
+	'port' => 27017,
+	'database' => env('MONGO_DB_DATABASE'),
+	'username' => env('MONGO_DB_USERNAME'),
+	'password' => env('MONGO_DB_PASSWORD'),
+	'options' => [
+		'database' => env('MONGO_DB_DATABASE') // sets the authentication database required by mongo 3
+	]
+],
+```
+
 
 ## 常見問題 
 - Routes 除了/之外其他 Page 顯示 Not Found
