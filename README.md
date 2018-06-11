@@ -66,7 +66,9 @@ MONGODB_USERNAME=
 MONGODB_PASSWORD=
 ```
 Step 3. 在 /var/www/html/MyProject/config/database.php 新增 MongoDB 設定
+
 將 'default' => env('DB_CONNECTION', 'mysql'), 改為 'default' => env('MONGODB_CONNECTION', 'mongodb'),
+
 並新增 MongoDB 相關設定
 ```
 'mongodb' => [
