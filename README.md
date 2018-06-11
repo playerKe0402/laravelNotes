@@ -1,4 +1,4 @@
-# Linux Ubuntu16.04(Laravel + PHP + Apache)
+# Linux Ubuntu16.04(Laravel + PHP7 + Apache + MongoDB)
 ## 安裝 Apache
 Step 1. 更新套件檔案清單
 ```
@@ -46,6 +46,12 @@ cd html/
 composer create-project laravel/laravel MyProject --prefer-dist
 chmod -R 777 /var/www/html/MyProject/
 ```
+
+## 安裝 MongoDB
+```
+sudo pecl install mongodb
+```
+
 
 ## 常見問題 
 - Routes 除了/之外其他 Page 顯示 Not Found
