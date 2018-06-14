@@ -122,7 +122,12 @@ sudo add-apt-repository ppa:git-core/ppa
 sudo apt-get update
 sudo apt-get install git
 ```
+- Ubuntu VMtool 安裝
+```
+apt -y --reinstall install open-vm-tools-desktop fuse
+```
 ## Reference
 [網址移除Public](http://blog.tonycube.com/2015/01/laravel-23-public.html)
+
 [PHP 使用 MongoDB](https://blog.gtwang.org/web-development/php-mongodb-database-tutorial/)
 
