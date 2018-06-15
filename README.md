@@ -115,6 +115,13 @@ meta 標籤
 ```
 <meta name="csrf-token" content="{{ csrf_token() }}"/>
 ```
+
+- "The stream or file "/var/www/html/MyProject/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied" 權限問題
+```
+/var/www/html/MyProject/storage> sudo chmod 777 logs/
+/var/www/html/MyProject/storage/framework> sudo chmod 777 views/
+```
+
 - Git 更新
 ```
 sudo apt-get remove git
