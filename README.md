@@ -88,7 +88,7 @@ Step 3. 在 /var/www/html/MyProject/config/database.php 新增 MongoDB 設定
 ## 常見問題 
 - Routes 除了/之外其他 Page 顯示 Not Found
 
-將 /etc/init.d/apache2/apache2.conf 文件中的 AllowOverride None 改為 AllowOverride Al
+將 /etc/apache2/apache2.conf 文件中的 AllowOverride None 改為 AllowOverride All
 ```
 <Directory /var/www/>
 	Options Indexes FollowSymLinks
