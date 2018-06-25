@@ -50,7 +50,7 @@ chmod -R 777 /var/www/html/MyProject/
 
 ## 安裝 MongoDB
 ```
-sudoapt-get install -y php-pear
+sudo apt-get install -y php-pear
 sudo pecl install mongodb
 ```
 
